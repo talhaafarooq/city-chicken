@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>City Chicken</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Contrail+One&amp;family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;family=Mukta:wght@200;300;400;500;600;700;800&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Poppins:ital,wght@0,300;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-active {
+            border-bottom: 3px solid #F7AB3C;
+        }
+
+        .remove-nav-active {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 0px;">
+        <a class="navbar-brand" style="padding: 0px;" href="#">
+            <img src="images/logo.svg" width="200px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <span style="font-size: 25px;"><i>City Chicken</i></span>
+                            <br />
+                            <small style="position: relative;top:-5px"><i>Das Origional seit 1996</i></small>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-pills mr-auto mt-2 mt-lg-0">
+                <li class="nav-item" id="address-tab">
+                    <a class="nav-link" href="#address-section">Restaurant</a>
+                </li>
+                <li class="nav-item" id="spieskatre-tab">
+                    <a class="nav-link" href="#spieskatre-section">Speisekarte</a>
+                </li>
+                <li class="nav-item" id="service-tab">
+                    <a class="nav-link" href="#service-section">Service</a>
+                </li>
+                <li class="nav-item" id="offnungszeiten-tab">
+                    <a class="nav-link" href="#offnungszeiten-section">Offnungszeiten</a>
+                </li>
+                <li class="nav-item" id="standor-tab">
+                    <a class="nav-link" href="#standor-section">Standort</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item" style="margin-top: 10px;">
+                    <a class="nav-link" style="border-right: 3px solid #D9D9D9;">
+                        <button class="pl-3 pr-3"
+                            style="background-color: #D9D9D9;border:1px solid #D9D9D9;">Logo</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link">
+                        <span>
+                            <span style="font-size:13px;position: relative;top:5px;">foodfood</span>
+                            <br>
+                            <span style="font-size:11px;position: relative;top:-5px;">Business Partner</span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Navbar End Here -->
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <img src="images/banner/Restaurant.png" width="100%" alt="">
+    </section>
+    <!-- Banner Section End Here -->
+    <!-- Address Section -->
+    <section class="address-section" id="address-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="h3">Restaurant</p>
+                    <p>In unserem Restaurant<br />werden Ihnen XXX, XXX<br />und XXX Speisen serviert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Address Section End Here -->
+    <!-- Restaurant Images -->
+    <section class="container-fluid mt-5" style="padding: 0px!important;">
+        <div class="row mx-auto my-auto">
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img src="images/slider/Picture1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img src="images/slider/Picture2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img src="images/slider/Picture3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Restaurant Images End Here -->
+    <!-- spieskarte section -->
+    <section id="spieskatre-section" style="margin-top: 150px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <p class="h3">Speisekarte</p>
+                    <p style="font-size: 18px;">Lade dir jetzt die foodysee App<br />
+                        runter und finde<br />
+                        unsere Speisen in ihrem Handy</p>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-light pl-3 pr-3" style="background-color: #D9D9D9;">Logo</button>
+                        </div>
+                        <div class="col-5">
+                            <p style="border-left: 3px solid green;padding-left: 10px;height:43px;">foodfood</p>
+                            <span style="position: relative;top:-40px;left:13px"><small>Business Partner</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center" style="border-left: 1px solid #D9D9D9;">
+                    <div class="mt-2">
+                        <p style="margin-bottom: 50px;font-size: 25px;">iOS</p>
+                        <img src="images/phone/iphone.svg" class="img-fluid" alt="iphone-img">
+                    </div>
+                    <div class="mt-5">
+                        <img src="images/phone/apple.svg" class="img-fluid" alt="apple-img">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center"
+                    style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9;">
+                    <div class="mt-2">
+                        <p style="margin-bottom: 50px;font-size: 25px;">Android</p>
+                        <img src="images/phone/iphone.svg" class="img-fluid" alt="iphone-img">
+                    </div>
+                    <div class="mt-5">
+                        <img src="images/phone/googleplay.svg" class="img-fluid" alt="android-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- spieskarte section End Here -->
+    <!-- service Section -->
+    <section class="service-section" id="service-section" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="h3">Service</p>
+                    <p>In unserem Restaurant<br />werden Ihnen XXX, XXX<br />und XXX Speisen serviert.</p>
+                    <p class="mt-5">Als Service wir Ihnen<br />folgende Leistungen an:</p>
+                    <div class="row mt-5 services-table">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/airline.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/deck.svg"> <span class="ml-4">Sitzplätze außen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/emoji_people.svg"> <span class="ml-4">Bedienung</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/shopping_basket.svg"> <span class="ml-4">Zum
+                                    Mitnehmen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/local_bar.svg"> <span class="ml-4">Bar</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/deck.svg"> <span class="ml-4">Free Wifi</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/event_available.svg"> <span class="ml-4">Reservation</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/music_note.svg"> <span class="ml-4">Live
+                                    Entertainment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p class="mt-5">Sie können bei ins vor Ort mit<br />folgenden Zahlungsmittel zahlen:</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5 services-table">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="box">
+                                <img src="images/services/14.svg"> <span class="ml-4">Sitzplätze innen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service Section End Here -->
+
+
+    <!-- offnungszeiten Section -->
+    <section class="offnungszeiten-section" id="offnungszeiten-section" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="h3">Öffnungszeiten</p>
+                    <p>Wir haben zu folgenden Uhrzeiten<br /> für Sie geöffnet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <table class="table table-borderless offnungszeiten-table">
+                        <tbody>
+                            <tr>
+                                <td>Ladenzeiten</td>
+                                <td><img src="images/services/deck.svg"></td>
+                                <td>&emsp;&emsp;</td>
+                                <td><img src="images/services/deck.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <table class="table table-borderless offnungszeiten-table">
+                        <tbody>
+                            <tr>
+                                <td>PAUSENZIETEN</td>
+                                <td><img src="images/services/deck.svg"></td>
+                                <td><img src="images/services/deck.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>Pause</td>
+                                <td>09:00</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <table class="table table-borderless offnungszeiten-table">
+                        <tbody>
+                            <tr>
+                                <td>KUCHENZEITEN</td>
+                                <td><img src="images/services/deck.svg"></td>
+                                <td>&emsp;&emsp;</td>
+                                <td><img src="images/services/deck.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>&emsp;&emsp;</td>
+                                <td>22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standort section -->
+    <section id="standor-section" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="h3">Standort</p>
+                </div>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27197.32645400115!2d74.33540049999999!3d31.560785000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b3297a3b9c5%3A0xca38a239b2a502a9!2sGarhi%20Shahu%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1682865648202!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <table class="table table-borderless offnungszeiten-table">
+                        <tbody>
+                            <tr>
+                                <td>City Chicken</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td align="right">abc@test.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <table class="table table-borderless offnungszeiten-table">
+                        <tbody>
+                            <tr>
+                                <td>Sonnenalee</td>
+                                <td align="right">35</td>
+                            </tr>
+                            <tr>
+                                <td>10178</td>
+                                <td align="right">Berlin</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Standort section End Here -->
+    <!-- footer Section -->
+    <section style="clear: both;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div id="textbox1" class="collapse mt-5 mb-5">1
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur, cumque illum sequi,
+                        obcaecati
+                        itaque alias dolorum enim nemo corrupti veniam totam numquam officiis veritatis cupiditate
+                        ratione
+                        laudantium id ut?
+                    </div>
+                    <div id="textbox2" class="collapse mt-5 mb-5">2
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur, cumque illum sequi,
+                        obcaecati
+                        itaque alias dolorum enim nemo corrupti veniam totam numquam officiis veritatis cupiditate
+                        ratione
+                        laudantium id ut?
+                    </div>
+                    <div id="textbox3" class="collapse mt-5 mb-5">3
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur, cumque illum sequi,
+                        obcaecati
+                        itaque alias dolorum enim nemo corrupti veniam totam numquam officiis veritatis cupiditate
+                        ratione
+                        laudantium id ut?
+                    </div>
+                    <div id="textbox4" class="collapse mt-5 mb-5">4
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur, cumque illum sequi,
+                        obcaecati
+                        itaque alias dolorum enim nemo corrupti veniam totam numquam officiis veritatis cupiditate
+                        ratione
+                        laudantium id ut?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center text-white">
+                    <p>
+                        <span data-toggle="collapse" data-target="#textbox1" style="cursor: pointer;">Text 1
+                            &emsp;&emsp;</span>
+                        <span data-toggle="collapse" data-target="#textbox2" style="cursor: pointer;">Text 2
+                            &emsp;&emsp;</span>
+                        <span data-toggle="collapse" data-target="#textbox3" style="cursor: pointer;">Text 3
+                            &emsp;&emsp;</span>
+                        <span data-toggle="collapse" data-target="#textbox4" style="cursor: pointer;">Text 4</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End Here -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/sidenavigationbar.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav li').click(function () {
+                let tabName = $(this).attr('id');
+                $('.navbar-nav li').removeClass('nav-active');
+                $(this).addClass('nav-active');
+            });
+
+
+            $('.navbar-brand').click(function () {
+                $('.navbar-nav li').removeClass('nav-active');
+            });
+        }); 
+    </script>
+</body>
+
+</html>
